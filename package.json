@@ -32,6 +32,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@splinetool/runtime": "^0.9.428"
+		"@splinetool/runtime": "^0.9.428",
+		"svelte-typewriter": "^3.1.6"
 	}
 }
