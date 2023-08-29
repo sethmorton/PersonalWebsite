@@ -6,9 +6,10 @@
 	let linksInterval = false;
 	let headerInterval = false;
 	onMount(async () => {
+
 		const canvas = document.getElementById('canvas3d');
-		const app = new Application(canvas);
-		app.load('https://prod.spline.design/i1vVSiQte1dh6fwm/scene.splinecode');
+const app = new Application(canvas);
+app.load('https://prod.spline.design/i1vVSiQte1dh6fwm/scene.splinecode');
 		intervalSet();
 	});
 	const intervalSet = () => {	
@@ -25,12 +26,12 @@
 	<canvas class="absolute min-h-screen" id="canvas3d" />
 	<div class="absolute top-1/4 right-1/4 transform translate-y-[-50%]">
 		<div class="text-center">
-			<h1 class="text-white text-5xl font-bold">Hello!</h1>
+			<h1 class="text-white text-7xl font-bold">Hello!</h1>
 		</div>
 		<div class="text-center">
 
 			<Typewriter delay={1000} interval={200}>
-				<h1 class="text-white py-2 text-5xl font-bold">I'm Seth</h1>
+				<h1 class="text-white py-2 text-7xl font-bold">I'm Seth</h1>
 			</Typewriter>
 
 		</div>
