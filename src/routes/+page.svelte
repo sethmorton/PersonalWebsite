@@ -14,12 +14,11 @@
 	$: hiddenClass = loading ? 'hidden' : '';
 </script>
 
-	<div class="h-full min-h-screen flex {hiddenClass} ">
-		<div class="justify-center align-middle">
-			<Jumper size="60" color="#FF3E00" unit="px" duration="1s" />
-		</div>
-		
-	</div>
+<div class="h-full min-h-screen flex bg-black items-center justify-center {hiddenClass}">
+    <div>
+        <Jumper size="200" color="white" unit="px" duration="1s" />
+    </div>
+</div>
 	
 
 
