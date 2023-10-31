@@ -5,6 +5,10 @@
 	import { Jumper } from 'svelte-loading-spinners';
 	let loading = true;
 	onMount(async () => {
+		/**
+		 * @type {HTMLCanvasElement}
+		 * 
+		 */
 		const canvas = document.getElementById('canvas3d');
 		if (canvas !== null) {
 			const app = new Application(canvas);
@@ -13,11 +17,12 @@
 				loading = false;
 			});
 		}
+
 		// intervalSet();
 	});
 	const showScreen = () => {
-			hiddenClass = 'hidden';
-	}
+		hiddenClass = 'hidden';
+	};
 	$: hiddenClass = loading ? '' : 'hidden';
 </script>
 
@@ -35,9 +40,9 @@
 		</div>
 		<div class="text-center">
 			{#if loading == false}
-			<Typewriter delay={1000} interval={200}>
-				<h1 class="text-white py-2 text-7xl font-bold">I'm Seth</h1>
-			</Typewriter>
+				<Typewriter delay={1000} interval={200}>
+					<h1 class="text-white py-2 text-7xl font-bold">I'm Seth</h1>
+				</Typewriter>
 			{/if}
 		</div>
 	</div>
@@ -45,15 +50,15 @@
 		<div class="text-center p-4">
 			<h4 class="text-white py-2 text-2xl font-bold d-inline">
 				{#if loading == false}
-				<Typewriter delay={2800} interval={200}>
-					<a href="https://github.com/sethmorton">Github | </a><a
-						href="https://www.linkedin.com/in/seth-morton-118574242/"
-						>LinkedIn |
-					</a><a
-						href="https://drive.google.com/file/d/1mM4cYNtaboo-0MOkQpJ2jQ7TrZR4JsJk/view?usp=sharing"
-						>Resume</a
-					>
-				</Typewriter>
+					<Typewriter delay={2800} interval={200}>
+						<a href="https://github.com/sethmorton">Github | </a><a
+							href="https://www.linkedin.com/in/seth-morton-118574242/"
+							>LinkedIn |
+						</a><a
+							href="https://drive.google.com/file/d/1IzuffKsW-TEfug8Cqrzi5yirdHTHRaI3/view?usp=sharing"
+							>Resume</a
+						>
+					</Typewriter>
 				{/if}
 			</h4>
 		</div>
