@@ -1,29 +1,26 @@
-<script>
-	import { Application } from '@splinetool/runtime';
-	import { onMount } from 'svelte';
-	import Typewriter from 'svelte-typewriter';
-	import { Jumper } from 'svelte-loading-spinners';
-	let loading = true;
-	onMount(async () => {
-		/**
-		 * @type {HTMLCanvasElement}
-		 * 
-		 */
-		const canvas = document.getElementById('canvas3d');
-		if (canvas !== null) {
-			const app = new Application(canvas);
-			app.load('https://prod.spline.design/i1vVSiQte1dh6fwm/scene.splinecode').then(() => {
-				showScreen();
-				loading = false;
-			});
-		}
+<script lang="ts">
+    import { Application } from '@splinetool/runtime';
+    import { onMount, tick } from 'svelte';
+    import Typewriter from 'svelte-typewriter';
+    import { Jumper } from 'svelte-loading-spinners';
+    let loading = true;
+    onMount(async () => {
+        await tick(); // Wait for the DOM to be updated
+        const canvas = document.getElementById('canvas3d') as HTMLCanvasElement;
+        if (canvas !== null) {
+            const app = new Application(canvas);
+            app.load('https://prod.spline.design/i1vVSiQte1dh6fwm/scene.splinecode').then(() => {
+                showScreen();
+                loading = false;
+            });
+        }
 
-		// intervalSet();
-	});
-	const showScreen = () => {
-		hiddenClass = 'hidden';
-	};
-	$: hiddenClass = loading ? '' : 'hidden';
+        // intervalSet();
+    });
+    const showScreen = () => {
+        hiddenClass = 'hidden';
+    };
+    $: hiddenClass = loading ? '' : 'hidden';
 </script>
 
 <div class="h-full min-h-screen flex bg-black items-center justify-center {hiddenClass}">
@@ -55,7 +52,7 @@
 							href="https://www.linkedin.com/in/seth-morton-118574242/"
 							>LinkedIn |
 						</a><a
-							href="https://drive.google.com/file/d/1kTmBtyVA7WwJp-o8FXjh7PYgNetH5L3m/view?usp=sharing"
+							href="https://drive.google.com/file/d/1tZDUHFhm1xT4OznnHa_mD63h4-9tkdZw/view?usp=sharing"
 							>Resume</a
 						>
 					</Typewriter>
