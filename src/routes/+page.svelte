@@ -52,7 +52,7 @@
 							href="https://www.linkedin.com/in/seth-morton-118574242/"
 							>LinkedIn |
 						</a><a
-							href="https://drive.google.com/file/d/1tZDUHFhm1xT4OznnHa_mD63h4-9tkdZw/view?usp=sharing"
+							href="https://drive.google.com/file/d/1PWt8_TXndqjQuA9EHsTUZrHzyjv8vit0/view?usp=sharing"
 							>Resume</a
 						>
 					</Typewriter>
