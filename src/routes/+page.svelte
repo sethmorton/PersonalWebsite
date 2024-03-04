@@ -23,7 +23,7 @@
     $: hiddenClass = loading ? '' : 'hidden';
 </script>
 
-<div class="h-full min-h-screen flex bg-black items-center justify-center {hiddenClass}">
+<div class="h-full min-h-screen min-w-screen flex bg-black items-center justify-center {hiddenClass}">
 	<div>
 		<Jumper size="200" color="white" unit="px" duration="1s" />
 	</div>
@@ -50,9 +50,9 @@
 					<Typewriter delay={2800} interval={200}>
 						<a href="https://github.com/sethmorton">Github | </a><a
 							href="https://www.linkedin.com/in/seth-morton-118574242/"
-							>LinkedIn |
+							>LinkedIn |	
 						</a><a
-							href="https://drive.google.com/file/d/1PWt8_TXndqjQuA9EHsTUZrHzyjv8vit0/view?usp=sharing"
+							href="https://drive.google.com/file/d/1ua0vPcUKxvBUyJ9hxhL2Izesj0wwOfdV/view?usp=sharing"
 							>Resume</a
 						>
 					</Typewriter>
